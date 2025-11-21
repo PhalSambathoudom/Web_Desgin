@@ -1,0 +1,41 @@
+.wrapper {
+  text-align: center;   
+}
+
+.big,
+.small {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.small {
+  background-color: #ff6347;
+  font-size: 1.5em;
+}
+
+.big {
+  display: none;
+}
+
+@media only screen and (min-width: 517px) {
+  .small {
+    display: none;
+  }
+
+  .big {
+    display: inline-block;
+    background-color: #76ff03;
+    font-size: 2.5em;
+  }
+}
